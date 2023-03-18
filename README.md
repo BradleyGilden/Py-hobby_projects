@@ -9,5 +9,5 @@ This is a simple project that creates a madlibs game for the user via command pr
 
 ### Car CTRL
 
-<b>see [car.py](car_ctr/car.py)</b><br>
+<b>see [car.py](car_ctrl/car.py)</b><br>
 This is a simple project that creates a madlibs game for the user via command prompt
