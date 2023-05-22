@@ -1,6 +1,6 @@
 # Python Projects
 
-**This Repository Contains hobby projects made while learning the python language**
+**This repository contains hobby projects made while learning the python language**
 
 ### Madlibs
 
