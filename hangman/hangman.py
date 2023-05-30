@@ -101,7 +101,9 @@ print("\t" + sentence)
 
 
 while count > 0:
-    car = input()
+    print()
+    car = input("Enter character: ")
+    print()
     if car[0] in wordlist:
         for temp in range(len(sentence)):
             listedstr = list(sentence)
