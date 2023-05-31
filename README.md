@@ -10,4 +10,80 @@ This is a simple project that creates a madlibs game for the user via command pr
 ### Car CTRL
 
 <b>see [car.py](car_ctrl/car.py)</b><br>
-This is a simple project that creates a madlibs game for the user via command prompt
+This program simulates controlling a car via text prompts
+
+### Hangman
+
+<b>see [hangman.py](hangman/hangman.py)</b><br>
+A basic hangman game that can be played via terminal [compatible for Linux, MacOS and Windows systems]
+<br>Basic use:
+
+`python3 hangman.py`
+```
+Enter a sentence that is 13 characters or more: albus dumbledore
+
+<<screen clears>>
+
+            +----+
+            |    |
+            |    |
+            O    |
+           /|\   |
+           / \   |
+                 |
+        ==========
+
+        a___s_d_m___d_r_
+
+Enter character: u
+
+        a__us_dum___d_r_
+
+Enter character: l
+
+        al_us_dum_l_d_r_
+
+Enter character: q
+
+            +----+
+            |    |
+            |    |
+            O    |
+           /|\   |
+           /     |
+                 |
+        ==========
+
+        al_us_dum_l_d_r_
+
+Enter character: y
+
+            +----+
+            |    |
+            |    |
+            O    |
+           /|\   |
+                 |
+                 |
+        ==========
+
+        al_us_dum_l_d_r_
+
+Enter character: b
+
+        albus_dumbl_d_r_
+
+Enter character:  
+
+        albus dumbl_d_r_
+
+Enter character: e
+
+        albus dumbled_re
+
+Enter character: o 
+
+        albus dumbledore
+
+Congratulations, You Won!
+```

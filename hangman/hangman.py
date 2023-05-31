@@ -82,15 +82,14 @@ while len(sentence) < 13:
 
 copy = sentence
 
-while i < len(sentence):
+while i < len(copy):
     if i % 2 == 0:
         pass
-    else:
+    elif sentence[i] != '_':
         wordlist.append(sentence[i])
         sentence = sentence.replace(sentence[i], '_')
         count += 1
     i += 1
-
 
 if platform.system() == "Windows":
     os.system('cls')
@@ -98,7 +97,6 @@ else:
     os.system('clear')
 print(phase1)
 print("\t" + sentence)
-
 
 while count > 0:
     print()
@@ -121,6 +119,6 @@ while count > 0:
 
 print()
 if count == 0 and copy == sentence:
-    print("Congratulations you won")
+    print("Congratulations, You won!")
 else:
-    print("You Lost")
+    print("You Lost :(")
