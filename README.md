@@ -33,15 +33,15 @@ Enter a sentence that is 13 characters or more: albus dumbledore
                  |
         ==========
 
-        a___s_d_m___d_r_
+        a___s d_m___d_r_
 
 Enter character: u
 
-        a__us_dum___d_r_
+        a__us dum___d_r_
 
 Enter character: l
 
-        al_us_dum_l_d_r_
+        al_us dum_l_d_r_
 
 Enter character: q
 
@@ -54,7 +54,7 @@ Enter character: q
                  |
         ==========
 
-        al_us_dum_l_d_r_
+        al_us dum_l_d_r_
 
 Enter character: y
 
@@ -67,13 +67,9 @@ Enter character: y
                  |
         ==========
 
-        al_us_dum_l_d_r_
+        al_us dum_l_d_r_
 
 Enter character: b
-
-        albus_dumbl_d_r_
-
-Enter character:  
 
         albus dumbl_d_r_
 
