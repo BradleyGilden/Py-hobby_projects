@@ -1,5 +1,6 @@
 import os
 import platform
+import random
 
 phase1 = '''            +----+
             |    |
@@ -82,14 +83,17 @@ while len(sentence) < 13:
 
 copy = sentence
 
-while i < len(copy):
-    if i % 2 == 0:
-        pass
-    elif sentence[i] != '_':
+while count < 6:
+    
+    i = random.randint(0, len(copy) - 1)
+
+    if sentence[i] == ' ':
+        continue
+
+    if sentence[i] != '_':
         wordlist.append(sentence[i])
         sentence = sentence.replace(sentence[i], '_')
         count += 1
-    i += 1
 
 if platform.system() == "Windows":
     os.system('cls')
