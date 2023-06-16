@@ -4,3 +4,6 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 FPS = 60
 SS_H, SS_W = 85, 70  # space ship width and height
+B_SPEED = 10
+
+bullets = []

@@ -1,35 +1,18 @@
 import pygame
-from os import path
-from globals import WHITE, FPS, WIDTH, HEIGHT, SS_H, SS_W
+from globals import WHITE, FPS, SS_H, SS_W
 from keyhandle import handle_keys_red, handle_keys_yellow
+from surfaces import M_WINDOW, Y_SPACESHIP_IMG, R_SPACESHIP_IMG
+from surfaces import BACKGROUND, BORDER
 
-
-# Initializing surfaces
-BORDER = pygame.Rect(WIDTH / 2 - 5, 0, 10, HEIGHT)
-Y_SPACESHIP_IMG = pygame.image.load(
-    path.join('Assets', 'yellship.png'))
-Y_SPACESHIP_IMG = pygame.transform.rotate(
-    pygame.transform.scale(Y_SPACESHIP_IMG, (SS_H, SS_W)), 90)
-R_SPACESHIP_IMG = pygame.image.load(
-    path.join('Assets', 'redship.png'))
-R_SPACESHIP_IMG = pygame.transform.rotate(
-    pygame.transform.scale(R_SPACESHIP_IMG, (SS_H, SS_W)), 270)
-
-window = pygame.display.set_mode((WIDTH, HEIGHT))
-
-# Load and scale the background image
-BACKGROUND = pygame.image.load(
-    path.join('Assets', 'background4.jpg'))
-BACKGROUND = pygame.transform.scale(BACKGROUND, (WIDTH, HEIGHT))
 
 pygame.display.set_caption("Space Ship Shooter")
 
 
 def set_window(colour, yellow, red):
-    window.blit(BACKGROUND, (0, 0))
-    pygame.draw.rect(window, WHITE, BORDER)
-    window.blit(Y_SPACESHIP_IMG, (yellow.x, yellow.y))
-    window.blit(R_SPACESHIP_IMG, (red.x, red.y))
+    M_WINDOW.blit(BACKGROUND, (0, 0))
+    pygame.draw.rect(M_WINDOW, WHITE, BORDER)
+    M_WINDOW.blit(Y_SPACESHIP_IMG, (yellow.x, yellow.y))
+    M_WINDOW.blit(R_SPACESHIP_IMG, (red.x, red.y))
     pygame.display.update()
 
 
