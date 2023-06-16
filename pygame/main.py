@@ -6,11 +6,11 @@ from keyhandle import handle_keys_red, handle_keys_yellow
 
 BORDER = pygame.Rect(WIDTH / 2 - 5, 0, 10, HEIGHT)
 Y_SPACESHIP_IMG = pygame.image.load(
-    path.join('Assets', 'spaceship_yellow.png'))
+    path.join('Assets', 'yellship.png'))
 Y_SPACESHIP_IMG = pygame.transform.rotate(
     pygame.transform.scale(Y_SPACESHIP_IMG, (SS_H, SS_W)), 90)
 R_SPACESHIP_IMG = pygame.image.load(
-    path.join('Assets', 'spaceship_red.png'))
+    path.join('Assets', 'redship.png'))
 R_SPACESHIP_IMG = pygame.transform.rotate(
     pygame.transform.scale(R_SPACESHIP_IMG, (SS_H, SS_W)), 270)
 
