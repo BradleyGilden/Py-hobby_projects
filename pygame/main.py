@@ -4,6 +4,7 @@ from globals import WHITE, FPS, WIDTH, HEIGHT, SS_H, SS_W
 from keyhandle import handle_keys_red, handle_keys_yellow
 
 
+# Initializing surfaces
 BORDER = pygame.Rect(WIDTH / 2 - 5, 0, 10, HEIGHT)
 Y_SPACESHIP_IMG = pygame.image.load(
     path.join('Assets', 'yellship.png'))
